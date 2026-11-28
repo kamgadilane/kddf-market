@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Confirmez votre adresse email</title></head>
+<body style="margin:0;padding:0;background:#0B0B10">
+  <div style="background:#0B0B10;padding:24px 12px;font-family:Arial,Helvetica,sans-serif;color:#E5E7EB;line-height:1.55">
+    <div style="max-width:520px;margin:auto;background:#111118;border:1px solid #22222F;border-radius:16px;padding:28px">
+      <h1 style="margin:0 0 14px;font-size:22px;color:#ffffff">Confirmez votre adresse email</h1>
+      <p>Bienvenue sur KDDF Market ! Confirmez votre adresse email pour activer votre compte et commencer à vendre ou à acheter.</p>
+      <p style="margin:24px 0"><a href="{{ .SiteURL }}/auth/callback?token_hash={{ .TokenHash }}&amp;type=signup&amp;next=/dashboard" style="background:#6366F1;color:#ffffff;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:bold;display:inline-block">Confirmer mon email</a></p>
+      <p style="font-size:12px;color:#9CA3AF;word-break:break-all;margin:0">Si le bouton ne marche pas, copiez ce lien dans votre navigateur : {{ .SiteURL }}/auth/callback?token_hash={{ .TokenHash }}&amp;type=signup&amp;next=/dashboard</p>
+      <p style="font-size:13px;color:#9CA3AF">Vous n'avez pas créé de compte ? Ignorez simplement cet email.</p>
+      <p style="font-size:12px;color:#9CA3AF;margin:28px 0 0">KDDF Market · {{ .SiteURL }}</p>
+    </div>
+  </div>
+</body></html>
